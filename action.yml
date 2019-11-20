@@ -1,5 +1,8 @@
 name: 'Beagle Security Test'
-description: 'Trigger beagle security test'
+description: 'Test for security vulnerabilities using Beagle Security'
+branding:
+  icon: 'bold'
+  color: 'blue'
 runs:
   using: 'node12'
   main: 'index.js'
