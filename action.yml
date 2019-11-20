@@ -1,0 +1,5 @@
+name: 'Beagle Security Test'
+description: 'Trigger beagle security test'
+runs:
+  using: 'node12'
+  main: 'index.js'
