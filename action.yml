@@ -1,7 +1,7 @@
 name: 'Beagle Security Test'
 description: 'Test for security vulnerabilities using Beagle Security'
 branding:
-  icon: 'bold'
+  icon: 'shield'
   color: 'blue'
 runs:
   using: 'node12'
