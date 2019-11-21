@@ -1,0 +1,30 @@
+name: Build Action 
+
+on:
+  push:
+    tags: 
+      - '*'
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    env:
+      CI: true
+    steps:
+    - name: Setup Action
+      uses: actions/checkout@v1
+    - name: Get Version
+      id: vars
+      run: echo ::set-output name=tag::$(echo ${GITHUB_REF:10})
+    - name: Run Build
+      run: npm run-script  pdfgen -- ${{ steps.vars.outputs.tag }}
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        draft: false
+        prerelease: false
