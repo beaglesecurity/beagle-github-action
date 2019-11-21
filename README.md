@@ -32,7 +32,7 @@ In short, Beagle finds out how deep your system can be penetrated. Know it befor
 3. Copy the code snippet to your ```main.yml```.
      * ![Code Snippet](./images/action-code.png)
 4. Provide environment variables to the action following the code snippet: 
-     * ![Environment Variables](./images/action-env.png)
+     * ![Environment Variables](./images/acrion-env.png)
 # Authors
 
 * **Beagle Security**
