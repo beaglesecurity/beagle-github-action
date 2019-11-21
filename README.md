@@ -29,7 +29,7 @@ In short, Beagle finds out how deep your system can be penetrated. Know it befor
     * Navigate to Secrets in repo settings.
     * Add beagle access_token and application_token as secrets.
 2. Copy the code snippet to your ```main.yml```:
-        ![Code Snippet](./images/action-code.png)
+        <br>![Code Snippet](./images/action-code.png)
 3. Provide environment variables to the action following the code snippet: 
         ![Environment Variables](./images/action-env.png)
 
