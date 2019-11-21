@@ -30,9 +30,9 @@ In short, Beagle finds out how deep your system can be penetrated. Know it befor
     * Add beagle access_token and application_token as secrets.
 2. Browse Marketplace and search for `Beagle Security Test`. 
 3. Copy the code snippet to your ```main.yml```.
-     * ![Code Snippet](./images/action-code.png)
+        ![Code Snippet](./images/action-code.png)
 4. Provide environment variables to the action following the code snippet: 
-     * ![Environment Variables](./images/acrion-env.png)
+        ![Environment Variables](./images/acrion-env.png)
 # Authors
 
 * **Beagle Security**
