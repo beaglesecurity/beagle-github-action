@@ -3,8 +3,8 @@ const github = require('@actions/github');
 const request = require("request");
 
 try {
-  const acc_token = process.env.Authorization;
-  const app_token = process.env.applicationToken;
+  const acc_token = process.env.access_token;
+  const app_token = process.env.application_token;
   var api = "https://api.beaglesecurity.com/rest/v2/test/start/";
   var requestData = {
     "applicationToken": app_token
