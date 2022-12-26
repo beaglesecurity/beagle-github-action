@@ -21,8 +21,7 @@ try {
           console.log(body);
       }
       else {
-          console.log("response.statusCode: " + response.statusCode);
-          console.log("response.statusText: " + response.statusText);
+          console.log(body);
       }
   });
 } catch (error) {
