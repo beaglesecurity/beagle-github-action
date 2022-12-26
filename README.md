@@ -11,7 +11,7 @@ Beagle is an intelligent and holistic platform to make your applications hack-pr
 
 In short, Beagle finds out how deep your system can be penetrated. Know it before the hackers do! 
 
-* [Beagle Security](https://beaglesecurity.com/) - Visit for more Details!
+* [Beagle Security](https://beaglesecurity.com/?utm_source=github&utm_medium=3rd_party&utm_campaign=integration) - Visit for more Details!
 
 ### Generate your Access Token From Beagle User Settings:
   Settings -> Access token -> Generate your new personal access token

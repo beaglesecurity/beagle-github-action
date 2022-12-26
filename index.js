@@ -3,17 +3,19 @@ const github = require('@actions/github');
 const request = require("request");
 
 try {
-  const acc_token = process.env.access_token;
-  const app_token = process.env.application_token;
-  var api = "https://api.beaglesecurity.com/v1/test/start";
+  const acc_token = process.env.Authorization;
+  const app_token = process.env.applicationToken;
+  var api = "https://api.beaglesecurity.com/rest/v2/test/start/";
   var requestData = {
-    "access_token": acc_token,
-    "application_token": app_token
+    "applicationToken": app_token
   };
   request({
       url: api,
       method: "POST",
-      json: requestData
+      json: requestData,
+      headers: {
+        'Authorization': "Bearer " + acc_token
+      }
   }, function (error, response, body) {
       if (!error && response.statusCode === 200) {
           console.log(body);
