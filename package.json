@@ -1,25 +1,26 @@
 {
   "name": "beagle-github-action",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "To trigger Beagle penetration testing via Github Action",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anees264/beagle-github-action.git"
+    "url": "git+https://github.com/aadheeb/beagle-github-action.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/anees264/beagle-github-action/issues"
+    "url": "https://github.com/aadheeb/beagle-github-action/issues"
   },
-  "homepage": "https://github.com/anees264/beagle-github-action#readme",
+  "homepage": "https://github.com/aadheeb/beagle-github-action#readme",
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/github": "^1.1.0",
     "request": "^2.88.0"
-  }
+  },
+  "devDependencies": {}
 }
