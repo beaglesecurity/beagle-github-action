@@ -12,13 +12,13 @@ jobs:
       CI: true
     steps:
     - name: Setup Action
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2
     - name: Get Version
       id: vars
       run: echo ::set-output name=tag::$(echo ${GITHUB_REF:10})
     - name: Create Release
       id: create_release
-      uses: actions/create-release@v3
+      uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
